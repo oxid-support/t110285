@@ -1,0 +1,13 @@
+services:
+    OxidSupport\Command\Counter:
+        class: OxidSupport\Command\Counter
+        autowire: true
+        public: true
+    OxidSupport\Command\CountCommand:
+        autowire: true
+        tags:
+        - { name: 'console.command', command: 'oxs:product-counter:count'}
+    OxidSupport\Command\CountCommand2:
+        autowire: true
+        tags:
+        - { name: 'console.command', command: 'oxs:product-counter:count2'}
