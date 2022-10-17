@@ -4,15 +4,13 @@ declare(strict_types = 1);
 
 namespace OxidSupport\Command;
 
-use OxidEsales\EshopCommunity\Internal\Framework\Event\ShopAwareServiceTrait;
+use OxidEsales\EshopCommunity\Internal\Framework\Console\AbstractShopAwareCommand;
 use OxidSupport\Command\Counter;
-use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class CountCommand2 extends Command
+class CountCommand2 extends AbstractShopAwareCommand
 {
-    use ShopAwareServiceTrait;
 
     const MESSAGE = 'There are %s available products in the shop.';
     private Counter $counterService;

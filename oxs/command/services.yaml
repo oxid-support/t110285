@@ -2,7 +2,6 @@ services:
     OxidSupport\Command\Counter:
         class: OxidSupport\Command\Counter
         autowire: true
-        public: true
     OxidSupport\Command\CountCommand:
         autowire: true
         tags:
