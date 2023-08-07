@@ -7,3 +7,4 @@ composer require oxid-support/command
 
 ./vendor/bin/oe-console oe:module:activate oxscommand
 ```
+https://bugs.oxid-esales.com/view.php?id=7365
